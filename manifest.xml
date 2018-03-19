@@ -3,7 +3,7 @@
 
     <name>hypePaypalSubscriptions</name>
     <id>hypePaypalSubscriptions</id>
-    <version type="dist">0.0.0</version>
+    <version type="dist">1.0.0</version>
 
     <description>Paypal add-on for hypeSubscriptions</description>
     <category>access</category>
