@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest xmlns="http://www.elgg.org/plugin_manifest/1.8">
+
+    <name>hypePaypalSubscriptions</name>
+    <id>hypePaypalSubscriptions</id>
+    <version type="dist">0.0.0</version>
+
+    <description>Paypal add-on for hypeSubscriptions</description>
+    <category>access</category>
+
+    <author>Ismayil Khayredinov (info@hypejunction.com)</author>
+    <website>http://hypeJunction.com</website>
+    <copyright>2018 (c) Ismayil Khayredinov</copyright>
+    <license>GNU Public License version 2</license>
+
+    <requires>
+        <type>elgg_release</type>
+        <version>3.0</version>
+    </requires>
+
+    <requires>
+        <type>plugin</type>
+        <name>hypeSubscriptions</name>
+    </requires>
+
+    <requires>
+        <type>plugin</type>
+        <name>hypePayments</name>
+    </requires>
+
+    <requires>
+        <type>plugin</type>
+        <name>hypePaypalPayments</name>
+    </requires>
+
+</plugin_manifest>
