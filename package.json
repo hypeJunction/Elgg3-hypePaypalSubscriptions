@@ -1,7 +1,7 @@
 {
 	"name": "hypePaypalSubscriptions",
 	"version": "1.0.0",
-	"license": "GPL-2.0",
+	"license": "SEE LICENSE IN https://hypejunction.com/license",
 	"repository": {
 		"type": "git",
 		"url": "git@github.com:hypeJunctionPro/Elgg3-hypePaypalSubscriptions.git",
