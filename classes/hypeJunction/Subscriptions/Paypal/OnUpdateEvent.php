@@ -5,6 +5,7 @@ namespace hypeJunction\Subscriptions\Paypal;
 use Elgg\Event;
 use hypeJunction\Subscriptions\SubscriptionPlan;
 use PayPal\Api\Plan;
+use Psr\Log\LogLevel;
 
 class OnUpdateEvent {
 
@@ -31,12 +32,11 @@ class OnUpdateEvent {
 			/* @var $subs \hypeJunction\Subscriptions\Paypal\PaypalSubscriptionsService */
 
 			if (!$subs->exportPlan($entity)) {
-				return false;
+				throw new \RuntimeException('Unable to export plan to PayPal. You may need to manually update it');
 			}
 		} catch (\Exception $ex) {
+			elgg_log($ex, LogLevel::ERROR);
 			register_error($ex->getMessage());
-
-			return false;
 		}
 
 	}
